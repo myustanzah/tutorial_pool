@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ADD</title>
+</head>
+<body>
+    <h1>FORM ADD STUDENT</h1>
+    <form action="/student/add" method="POST">
+        <label for="first_name">FIRSTNAME</label><br>
+        <input type="text" id="first_name" name="first_name"><br><br>
+
+        <label for="last_name">LASTNAME</label><br>
+        <input type="text" id="last_name" name="last_name"><br><br>
+
+        <label for="email">EMAIL</label><br>
+        <input type="text" id="email" name="email"><br><br>
+
+        <input type="radio" id="male" name="gender" value="male">
+        <label for="male">MALE</label><br>
+        <input type="radio" id="female" name="gender" value="female">
+        <label for="female">FEMALE</label><br><br>
+
+        <label for="birthdate">BIRTHDATE</label>
+        <input type="date" id="birthdate" name="birthdate"><br><br>
+
+        <input type="submit" value="submit">
+    </form>
+</body>
+</html>

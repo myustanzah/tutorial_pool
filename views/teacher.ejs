@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+    <%- include('partials/head', {title:'Data Teacher'}) %>
+<body>
+    <h1>Data Teacher</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>FIRSTNAME</th>
+                <th>LASTNAME</th>
+                <th>EMAIL</th>
+                <th>GENDER</th>
+            </tr>
+        </thead>
+        <tbody>
+            <% data.forEach((element)=>{ %>
+                <tr>
+                    <td><%= element.id %></td>
+                    <td><%= element.first_name %></td>
+                    <td><%= element.last_name %></td>
+                    <td><%= element.email %></td>
+                    <td><%= element.gender %></td>
+                </tr>
+            <% }) %>
+        </tbody>
+    </table>
+    
+</body>
+</html>

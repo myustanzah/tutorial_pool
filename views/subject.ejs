@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<%- include('partials/head', {title:'Data Subject'}) %>
+<body>
+    <div>
+        <table>
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>SUBJECT</th>
+                </tr>
+            </thead>
+            
+            <tbody>
+            <% data.forEach((element)=>{ %>
+                <tr>
+                    <td><%= element.id %></th>
+                    <td><%= element.subject_name %></td>
+                </tr>
+            <% }) %>
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>
